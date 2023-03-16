@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /admins
+
+User-agent: Googlebot
+Disallow: /admins
+
+

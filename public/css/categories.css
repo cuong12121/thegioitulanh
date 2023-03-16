@@ -1,0 +1,73 @@
+.item-img_1942{
+                height: 290px;
+                line-height: 290px;
+            }
+            .breadcrumb{
+                padding: 0;
+            }
+            .list-pro h3{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                font-size: 14px;
+                line-height: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 5px;
+
+            }
+            .list-pro h2{
+                margin-left:20px ;
+            }
+
+            .list-pro .price {
+                color: #D82A20;
+                display: block;
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 18px;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+
+            .list-pro .item-compare span{
+                border: 1px solid #e0e0e0;
+                border-radius: 2px;
+                color: #333;
+                display: inline-block;
+                font-size: 12px;
+                line-height: 12px;
+                margin-right: 5px;
+                padding: 4px 5px;
+                white-space: nowrap;
+            }
+            .list-pro .lists{
+                padding: 10px 15px 20px;
+                border-bottom: 1px solid #f3f3f3 !important;
+                border-right: 1px solid #f3f3f3 !important;
+            }
+            .list-pro{
+                border-left: 1px solid #f1f1f1;
+                border-top: 1px solid #f1f1f1;
+            }
+
+            .items-title{
+                margin: 10px 0 0 10px;
+               
+            }
+
+            .lists-id{
+                display: none;
+            }
+            @media screen and (max-width: 776px){
+                .listproduct{
+                    display: block;
+                }
+                .listproduct .item-img.item-img_1942 {
+                    height: auto;
+                }
+                .listproduct img {
+                   
+                    width: 100%;
+                }
+            }    

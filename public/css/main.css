@@ -1,0 +1,18 @@
+
+
+@media only screen and (min-width: 768px) {
+  	.mobile{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+  	.desktop{
+		display: none;
+	}
+	.col_input{
+        width: 150px;
+    }
+}
+
+
