@@ -43,16 +43,20 @@
             $hot = DB::table('hot')->select('product_id')->orderBy('orders', 'asc')->get()->pluck('product_id');
 
 
-             $product        = App\Models\groupProduct::find(3);
+            $product        = App\Models\groupProduct::find(3);
 
-            $product_tl      = json_decode($product->product_id);
+            if(!empty($product)){
+                $product_tl      = json_decode($product->product_id);
 
 
-            $data   =  App\Models\product::whereIn('id',  $product_tl)->orderBy('id', 'desc')->where('active', 1)->take(40)->get();
+                $data   =  App\Models\product::whereIn('id',  $product_tl)->orderBy('id', 'desc')->where('active', 1)->take(40)->get();
+            }
+
+            
 
            
         ?>
-        @if($data->count()>0)
+        @if(!empty($data) && $data->count()>0)
         @foreach($data as $datas)
         <div class="product">
             <div class="img">
