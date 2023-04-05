@@ -155,7 +155,7 @@
 @if(Auth::user()->permision>1)
 
 <li class="nav-item">
-    <a href="https://thegioitulanh.vn/admins/category/3"
+    <a href="https://thegioitulanh.com.vn/admins/category/3"
        class="nav-link {{ Request::is('products*') ? 'active' : '' }}">
         <p>Sản phẩm</p>
     </a>
