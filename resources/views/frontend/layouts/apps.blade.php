@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="vi-vn">
     <head>
-       <meta name="google-site-verification" content="GQ-4tc-Nw_natVAL7cfTginqQjVmERkfNEGn2rK-u_I" />
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
