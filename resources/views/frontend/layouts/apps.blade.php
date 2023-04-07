@@ -29,15 +29,13 @@
         <title>{{ !empty($title_seo)?$title_seo:'Thế Giới Tủ Lạnh - Tổng Kho Tủ Lạnh Chính Hãng, Giá Rẻ'  }}</title>
         <!--meta-->
         <meta name="title" content="Thế Giới Tủ Lạnh - Tổng Kho Tủ Lạnh Chính Hãng, Giá Rẻ"/>
-        <meta name="description" content="Thế Giới Tủ Lạnh, mua sắm tủ lạnh online tại thegioitulanh.vn giá rẻ chính hãng phục vụ chuyên nghiệp. Nhiều ưu đãi, giao và lắp đặt miễn phí"/>
+        <meta name="description" content="Thế Giới Tủ Lạnh, mua sắm tủ lạnh online tại thegioitulanh.com.vn giá rẻ chính hãng phục vụ chuyên nghiệp. Nhiều ưu đãi, giao và lắp đặt miễn phí"/>
         <meta content="document" name="resource-type" />
         <meta content="1800" http-equiv="refresh" />
         <meta name="robots" content="index,follow" />
         <meta name="revisit-after" content="1 days" />
         <meta http-equiv="content-language" content="vi-vn" />
-        <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed for https://dienmayabc.com" href="/product.rss" /> -->
-        <meta property="fb:admins" content=""/>
-        <meta property="fb:app_id" content="893882260753407" />
+       
         <meta property="og:title" content="Thế Giới Tủ Lạnh - Tổng Kho Tủ Lạnh Chính Hãng, Giá Rẻ" />
         <meta property="og:type" content="website" />
        
