@@ -122,9 +122,9 @@
          @stack('css')
     </head>
     <body class="module-home view-home">
-        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="{{  asset('http://code.jquery.com/jquery-1.10.2.js') }}"></script>
 
-        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
         <div class="wrapper">
             <div class="header">
                 <meta name="google-site-verification" content="VZ6xUK4LvjzzKg4DnXDrU0eGXa37Bk4IGdXP8cUFcZ0" />
