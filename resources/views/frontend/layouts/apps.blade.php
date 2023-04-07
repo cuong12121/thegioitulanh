@@ -54,6 +54,16 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="{{ asset('template/default/script/style.css') }}" rel="stylesheet">
 
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1HRZPN7JD"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-E1HRZPN7JD');
+        </script>
+
         
         <style type="text/css">
             #ui-id-1{
@@ -107,8 +117,6 @@
 
             }    
  
-
-            
         </style>
 
          @stack('css')
