@@ -258,8 +258,11 @@
     {!! Form::textarea('Salient_Features', null, ['class' => 'form-control', 'id' =>'content-1']) !!}
 </div>
 
+
+
 <!-- promotion -->
 <div class="form-group col-sm-6">
+    
     {!! Form::label('Km', 'Khuyến mãi text:') !!}
     {!! Form::textarea('promotion', null, ['class' => 'form-control', 'id' =>'promotion']) !!}
 </div>

@@ -206,8 +206,8 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
                         <i class="fa fa-shopping-cart"></i> <span class="txt_15">Thêm Vào Giỏ Hàng</span>
                         </a>
                     </div>
-                    Gọi đặt mua:  <span class="txt_b txt_red"><a href="tel:0967025111">0967 025 111</a></span> (7:30-22:00)<br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="txt_b txt_red"> <a href="tel:02438615111">02438 615 111</a></span> (7:30-17:30)
+                    Gọi đặt mua:  <span class="txt_b txt_red"><a href="tel:0967025111"> 0968845875</a></span> (7:30-22:00)<br>
+                   
                 </div>
                 <div class="clear"></div>
             </div>
