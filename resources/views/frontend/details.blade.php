@@ -262,7 +262,7 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
             <div id="comments" class="tab_content">
                 <div class="clear product_review">
                     <div class="clear a_content">
-                        <div class="comment-box-title bold space10px txt_b txt_13">Chia sẻ nhận xét của bạn về Google Tivi Sony 4K 65 inch XR-65X90K Mới 2022</div>
+                        <div class="comment-box-title bold space10px txt_b txt_13">Chia sẻ nhận xét của bạn về {{ @$data->Name }}</div>
                         <form class="form-post" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="user_post[item_type]" value="product">
                             <input type="hidden" name="user_post[item_id]" value="3740">
