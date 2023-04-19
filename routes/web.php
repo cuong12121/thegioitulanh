@@ -22,7 +22,7 @@ Route::get('/tin-tuc-tong-hop/', 'Frontend\blogController@index')->middleware('c
 
 Route::get('/tin-tuc', 'Frontend\blogController@index')->middleware('cache.headers:public;max_age=14400;etag')->name('tins');
 
-Route::get('/', 'Frontend\indexController@index')->middleware('throttle:60')->name('homeFe');
+Route::get('/', 'Frontend\indexController@index')->name('homeFe');
 
 Route::post('/check-unique-cate', 'productController@filterProduct')->name('check-unique-cate');
 
@@ -66,7 +66,7 @@ Route::get('/deal', 'mainController@deal')->middleware('cache.headers:public;max
 Route::get('/lien-he', 'mainController@lienhe');
 
 
-Route::get('/so-sanh-sp','productController@sosanh')->middleware('throttle:60')->name('so-sanh');
+Route::get('/so-sanh-sp','productController@sosanh')->name('so-sanh');
 
 
 Route::post('add-lienhe','lienheController@addLienhe')->name('addlienhe');
@@ -164,7 +164,7 @@ Route::post('show-viewer-product', 'AjaxController@showViewerProduct')->middlewa
 
 Route::get('/category/{slug}', 'Frontend\categoryController@index')->name('category-product')->middleware('auth');
 
-Route::get('/{slug}', 'Frontend\categoryController@details')->middleware('throttle:80')->name('details');
+Route::get('/{slug}', 'Frontend\categoryController@details')->name('details');
 
 Route::post('ajax-clent-register', 'AjaxController@registerClient')->name('register-client-fe');
 
@@ -174,7 +174,7 @@ Route::post('get-email-user', 'AjaxController@getEmail')->name('getemail');
 
 Route::post('get-search-input-compare', 'AjaxController@getProductSeachValueInput')->name('search-input-pd-compare');
 
-Route::post('suggest', 'AjaxController@getProductActive')->middleware('throttle:60')->name('sugest-click');
+Route::post('suggest', 'AjaxController@getProductActive')->name('sugest-click');
 
 Route::post('filter-price-product', 'AjaxController@filterByValue')->name('filter-option');
 
