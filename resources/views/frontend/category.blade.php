@@ -72,7 +72,7 @@
                     <p class="name"><a href="{{ route('details', $value->Link ) }}">{{ $value->Name }}</a></p>
                 </h3>
                 <p class="price">{{ str_replace(',' ,'.', number_format($value->Price)) }}<u>đ</u> 
-                    <span class="percent">-29%</span>
+                    <!-- <span class="percent">-29%</span> -->
                 </p>
                 
                 <p class="star"><i class="vstar"><i class="star-0"></i></i> (0 nhận xét)</p>
