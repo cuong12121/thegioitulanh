@@ -677,6 +677,8 @@ class productController extends AppBaseController
         
         $products = product::where('Marker', $id)->paginate(10);
 
+        dd($products);
+
         return view('products.index')->with('products', $products);
     }
 
