@@ -283,13 +283,10 @@ class categoryController extends Controller
                     $limit = 12;
 
                    
-                    $data = cache()->remember('data_'.$id_cate.'_'.$page, 100, function () use($Group_product, $limit, $page){
+                   
+                    $data = product::whereIn('id', $Group_product)->where('active', 1)->orderBy('id', 'desc')->limit($limit)->offset(($page - 1) * $limit)->get();
 
-                        $data = product::whereIn('id', $Group_product)->where('active', 1)->orderBy('id', 'desc')->limit($limit)->offset(($page - 1) * $limit)->get();
-
-                        return $data;
-
-                    });  
+                      
                         
                 
                     $numberdata = cache()->remember('numberdata'.$id_cate, 100, function () use($Group_product){
