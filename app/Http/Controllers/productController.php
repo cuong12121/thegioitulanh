@@ -697,21 +697,23 @@ class productController extends AppBaseController
 
     public function deleteProduct($id)
     {
-        $groupProduct = groupProduct::find($id);
-        $data_groupProduct = json_decode($groupProduct->product_id);
+
+        echo "done";
+        // $groupProduct = groupProduct::find($id);
+        // $data_groupProduct = json_decode($groupProduct->product_id);
 
       
-        try {
+        // try {
 
-            $delete = product::whereIn('id', $data_groupProduct)->delete();
+        //     $delete = product::whereIn('id', $data_groupProduct)->delete();
 
-            echo "thành công";
+        //     echo "thành công";
             
-        } catch (Exception $e) {
+        // } catch (Exception $e) {
 
            
-            dd($e);
-        }
+        //     dd($e);
+        // }
 
         //  try {
 
