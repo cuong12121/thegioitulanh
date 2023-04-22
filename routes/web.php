@@ -202,6 +202,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('incrawl', 'crawlController@allproduct');
 
+    Route::get('delete-product/{id}', 'productController@deleteProduct')->name('delete-product');
+
     Route::get('addTimeDealBefore', 'flashdealController@addTimeDealBefore');
 
     

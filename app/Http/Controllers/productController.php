@@ -675,9 +675,9 @@ class productController extends AppBaseController
     public function getProductToMaker($id)
     {
         
-        $products = product::where('Marker', $id)->paginate(10);
+        $products = product::where('Maker', $id)->paginate(10);
 
-        dd($products);
+      
 
         return view('products.index')->with('products', $products);
     }
@@ -692,6 +692,35 @@ class productController extends AppBaseController
         else{
             return abort('404');
         }
+
+    }
+
+    public function deleteProduct($id)
+    {
+        $groupProduct = groupProduct::find($id);
+        $data_groupProduct = json_decode($groupProduct->product_id);
+
+      
+        try {
+
+            $delete = product::whereIn('id', $data_groupProduct)->delete();
+
+            echo "thành công";
+            
+        } catch (Exception $e) {
+
+           
+            dd($e);
+        }
+
+        //  try {
+
+        //     $delete = product::whereIn('id', $data_groupProduct)->delete();
+        // }
+        // catch() {
+
+        //     echo "có lỗi xảy ra trong quá trình!";
+        // }
 
     }
 
