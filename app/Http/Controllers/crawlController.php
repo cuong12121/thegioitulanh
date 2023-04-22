@@ -2184,6 +2184,15 @@ class crawlController extends Controller
         
     }
 
+    public function getContentDienmayxanh()
+    {
+        $html = file_get_html('https://www.dienmayxanh.com/tivi/smart-tivi-kieu-chu-i-co-chan-the-serif-qled-samsung-4k-55-inch-qa55ls01ba');
+        
+        $content  = html_entity_decode($html->find('.article ',0));
+
+        dd($content);
+    }
+
 
    
 
@@ -2802,6 +2811,9 @@ http://dienmaynguoiviet.com/dieu-hoa-Funiki-SH09MMC-2-chieu-9000BTU/";
         echo "thanh cong";
 
     }
+
+
+
 
    
 

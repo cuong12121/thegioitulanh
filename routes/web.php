@@ -38,7 +38,7 @@ Route::post('get-compare-pd-viewer', 'productController@getPDviewer')->name('aja
 
 Route::post('showDealClick','flashdealController@showDealByIdClick')->name('showDealClick');
 
-Route::get('checkPSK', 'crawlController@checkProductSku');
+Route::get('checkPSK', 'crawlController@getContentDienmayxanh');
 
 Route::get('flash-deal', 'dealController@dealShowFlash')->name('show-flash-deal');
 
