@@ -422,6 +422,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('add-selected-value-filter', 'AjaxController@addValueSelectFilter')->name('add-value-selected-filter');
 
+
+    Route::get('/marker-products/{id}', 'productController@getProductToMaker')->name('marker-products');
     
 
     Route::post('add-promotion', 'AjaxController@add_promotion')->name('add-promotion');

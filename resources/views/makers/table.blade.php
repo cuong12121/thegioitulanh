@@ -21,6 +21,12 @@
                            class='btn btn-default btn-xs'>
                             <i class="far fa-edit"></i>
                         </a>
+
+                        <a href="{{ route('marker-products', [$maker->id]) }}"
+                           class='btn btn-default btn-xs'>
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </a>
+
                         {!! Form::button('<i class="far fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
                     </div>
                     {!! Form::close() !!}

@@ -672,6 +672,14 @@ class productController extends AppBaseController
         print_r($search);
     }
 
+    public function getProductToMaker($id)
+    {
+        
+        $products = product::where('Marker', $id)->paginate(10);
+
+        return view('products.index')->with('products', $products);
+    }
+
     public function viewHistoryPD($id)
     {
         $data = historyPd::where('product_id', $id)->OrderBy('id', 'desc')->take(6)->get();
