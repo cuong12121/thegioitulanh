@@ -577,10 +577,6 @@ class crawlController extends Controller
             echo "không tìm thấy nhóm sản phẩm này";
         }
 
-        
-
-       
-
     }
     public function checkempty()
     {
@@ -783,6 +779,11 @@ class crawlController extends Controller
         }  
         echo "thanh cong";  
     }
+
+
+
+
+
     public function removedot()
     {
         
@@ -846,851 +847,10 @@ class crawlController extends Controller
         echo "thanh cong";
 
     }
-    public function editProduct()
-    {
-        $code = "VH-230HY
-            VH-150HY2
-            VH-285A2
-            VH-365A2
-            VH-405A2
-            VH-285W2
-            VH-365W2
-            VH-405W2
-            VH-568HY2
-            VH-668HY2
-            VH-1008KA
-            VH-1599HY
-            VH-1599HYK
-            VH-1599HYKD
-            VH-2299A1
-            VH-2599A1
-            VH-2599A2KD
-            VH-2899A1
-            VH-2899A2K
-            VH-2899A2KD
-            VH-3699A1
-            VH-3699A2K
-            VH-3699A2KD
-            VH-4099A1
-            VH-4099A2KD
-            VH-5699HY
-            VH-8699HY
-            VH-1199HY
-            VH-2299W1
-            VH-2599W1
-            VH-2599W2KD
-            VH-2899W1
-            VH-2899W2KD
-            VH-3699W1
-            VH-3699W1N
-            VH-3699W2KD
-            VH-4099W1
-            VH-4099W1N
-            VH-4099W2KD
-            VH-5699W1
-            VH-6699W1
-            VH-282K
-            VH-382K
-            VH-482K
-            VH-682K
-            VH-888KA
-            VH-999K
-            VH-3899K
-            VH-4899K
-            VH-6899K
-            VH-168KL
-            VH-218KL
-            VH-258KL
-            VH-308KL
-            VH-358KL
-            VH-408KL
-            VH-258W
-            VH-308W
-            VH-358W
-            VH-299K
-            VH-218WL
-            VH-258WL
-            VH-308WL
-            VH-358WL
-            VH-408WL
-            VH-6009HP
-            VH-8009HP
-            VH-1009HP
-            VH-1209HP
-            VH-1520HP
-            VH-2209HP
-            VH-2599A3
-            VH-2599A4K
-            VH-2899A3
-            VH-2899A4K
-            VH-2899A4KD
-            VH-3699A3
-            VH-3699A4K
-            VH-3699A4KD
-            VH-4099A3
-            VH-4099A4K
-            VH-5699HY3
-            VH-5699HY3N
-            VH-6699HY3
-            VH-6699HY3N
-            VH-8699HY3
-            VH-8699HY3N
-            VH-1199HY3
-            VH-1399HY3
-            VH-2599W3
-            VH-2599W4K
-            VH-2899W3
-            VH-2899W4K
-            VH-3699W3
-            VH-3699W4K
-            VH-4099W3
-            VH-4099W4K
-            VH-5699W3
-            VH-6699W3
-            VH-2899K3
-            VH-3899K3
-            VH-4899K3
-            VH-6899K3
-            VH-8009HP3
-            VH-1009HP3
-            VH-1209HP3
-            VH-1520HP3
-            VH-218K3L
-            VH-258K3L
-            VH-308K3L
-            VH-358K3
-            VH-308W3
-            VH-358W3
-            VH-358K3L
-            VH-408K3L
-            VH-218W3L
-            VH-258W3L
-            VH-308W3L
-            VH-358W3L
-            VH-408W3L
-            HCF-100S1N
-            HCF-335S1PN1
-            HCF-500S1PN1
-            HCF-665S1PN2
-            HCF-505S2PN2
-            HCF-600S2PN2
-            HCF-655S2PN2
-            HCF-100S1Đ
-            HCF-335S1PĐ1
-            HCF-500S1PĐ1
-            HCF-665S1PĐ2
-            HCF-505S2PĐ2
-            HCF-600S2PĐ2
-            HCF-655S2PĐ2
-            HCF-106S1N
-            HCF-336S1N1
-            HCF-516S1N1
-            HCF-666S1N2
-            HCF-506S2N2
-            HCF-606S2N2
-            HCF-656S2N2
-            HCF-106S1Đ
-            HCF-336S1Đ1
-            HCF-516S1Đ1
-            HCF-666S1Đ2
-            HCF-506S2Đ2
-            HCF-606S2Đ2
-            HCF-656S2Đ2
-            HCFI-516S1Đ1
-            HCFI-666S1Đ2
-            HCFI-506S2Đ2
-            HCFI-606S2Đ2
-            HCFI-656S2Đ2
-            HCF-116P
-            HCF-166P
-            HCF-220P
-            HCF-116S
-            HCF-166S
-            HCF-220S
-            HCF-400S2 PĐ2.N
-            HCF-830S1 PĐ2.N
-            HCF-1000S1 PĐ2.N
-            HCF-1100S1 PĐ2.N
-            HCF-1300S1 PĐ3.N
-            HCF-1700S1 PĐ3.N
-            HCF-400S2 PH2.N
-            HCF-830S1 PH2.N
-            HCF-1000S1 PH2.N
-            HCF-1100S1 PH2.N
-            HCF-1300S1 PH3.N
-            HCF-1700S1 PH3.N
-            HCF-500S1 PĐG.N
-            HCF-680S1 PĐG.N
-            HCF-800S1 PĐG.N
-            HSC-350F1.N
-            HSC-400F1.N
-            HSC-450F1.N
-            HSC-500F1.N
-            HSC-650F2.N
-            HSC-850F2.N
-            HSC-1050F2.N
-            HSC-1500F3.N
-            F2721HTTV
-            FM1208N6W
-            FM1209N6W
-            FM1209S6W
-            TH2722SSAK
-            TH2519SSAK
-            TH2113SSAK
-            TH2112SSAV
-            TH2111SSAL
-            T2311DSAL
-            T2351VSAM
-            T2350VS2M
-            T2350VS2W
-            T2395VS2M
-            T2395VS2W
-            T2185VS2M
-            T2185VS2W
-            F2721HTTV & T2735NWLV
-            S3RF
-            S3WF
-            S5MB
-            DR-80BW
-            T2735NWLV
-            TV2402NTWW
-            TV2402NTWB
-            FV1450H2B
-            FV1450S2B
-            FV1450S3W
-            FV1450S3V
-            FV1408G4W
-            FV1409G4V
-            FV1409S2V
-            FV1409S2W
-            FV1409S3W
-            FV1409S4W
-            FV1408S4W
-            FV1208S4W
-            FV1408S4V
-            T2555VSAB
-            T2313VSAB
-            T2313VS2W
-            T2313VSPM
-            T2351VSAB
-            T2350VSAB
-            T2108VSPM
-            TH2111SSAB
-            F2515RTGW
-            F2515STGW
-            DVHP09B
-            DVHP09W
-            FV1410S4P
-            FV1410S3B
-            FV1410S5W
-            FV1411S3B
-            FV1411S4P
-            FV1411S5W
-            FV1413H3BA
-            FV1413S3WA
-            T2108VSPM2
-            EWF8025EQWA
-            EWF9025BQWA
-            EWF9025BQSA
-            EWF9024BDWB
-            EWF9024ADSA
-            EWF9523ADSA
-            EWF1024BDWA
-            EWW8023AEWA
-            EWW1042AEWA
-            EWF8024D3WB
-            EWF9024D3WB
-            EWF8024P5WB
-            EWF8024P5SB
-            EWF9024P5SB
-            EWF1024P5WB
-            EWF1024P5SB
-            EWF9042R7SB
-            EWF1042R7SB
-            EWF1141R9SB
-            EWW9024P5WB
-            EWW1024P5WB
-            EWW1142Q7WB
-            EDV754H3WB
-            EDV854J3WB
-            EDV854N3SB
-            WA22R8870GV/SV
-            WA16R6380BV/SV
-            WA12T5360BV/SV
-            WA10T5260BY/SV
-            WA90T5260BY/SV
-            WA85T5160BY/SV
-            DF60R8600CG/SV
-            WW90T3040WW/SV
-            DV90T7240BB/SV
-            DV90TA240AX/SV
-            DV90T7240BH/SV
-            DV90TA240AE/SV
-            WD14TP44DSB/SV
-            WD11T734DBX/SV
-            WD95T754DBX/SV
-            WD95T4046CE/SV
-            WW12TP94DSB/SV
-            WW10TP44DSB/SV
-            WW10TP54DSB/SV
-            WW10T634DLX/SV
-            WW10TP44DSH/SV
-            WW10TP54DSH/SV
-            WW10TA046AE/SV
-            WW90TP44DSB/SV
-            WW90TP54DSB/SV
-            WW95TA046AX/SV
-            WW90TP44DSH/SV
-            WW90TP54DSH/SV
-            WW90T634DLE/SV
-            WW95T4040CE/SV
-            WW85T554DAX/SV
-            WW85T554DAW/SV
-            WW85T4040CE/SV
-            WA11T5260BV/SV
-            WA10T5260BV/SV
-            NA-F100A9DRV
-            NA-F90A9DRV
-            NA-F85A9DRV
-            NA-F100A4HRV
-            NA-F100A4GRV
-            NA-F100A4BRV
-            NA-F90A4BRV
-            NA-F90A4HRV
-            NA-F90A4GRV
-            NA-F85A4HRV
-            NA-F85A4GRV
-            NA-V10FX1LVT
-            NA-V90FX1LVT
-            NA-FD12VR1BV
-            NA-FD12XR1LV
-            NA-FD11VR1BV
-            NA-FD11XR1LV
-            NA-FD11AR1GV
-            NA-FD11AR1BV
-            NA-FD10XR1LV
-            NA-FD10VR1BV
-            NA-FD10AR1BV
-            NA-FD10AR1GV
-            NA-FD95V1BRV
-            NA-FD95X1LRV
-            NA-V105FX2BV
-            NA-V10FX2LVT
-            NA-V95FX2BVT
-            NA-V90FX2LVT
-            NA-FD16V1BRV
-            NA-FD14V1BRV
-            NH-E70JA1WVT
-            NH-E80JA1WVT
-            ES-FK1054PV-S
-            ES-FK1054SV-G
-            ES-FK1252PV-S
-            ES-FK1252SV-G
-            ES-FK852EV-W
-            ES-FK852SV-G
-            ES-FK954SV-G
-            ES-W100PV-H
-            ES-W102PV-H
-            ES-W110HV-S
-            ES-W78GV-G
-            ES-W78GV-H
-            ES-W80GV-H
-            ES-W82GV-H
-            ES-W90PV-H
-            ES-W95HV-S
-            ES-X95HV-S
-            ES-X105HV-S
-            ES-Y90HV-S
-            MS-JS25VF
-            MS-JS35VF
-            MS-JS50VF
-            MS-JS60VF
-            MSY-JP25VF
-            MSY-JP35VF
-            MSY-JP50VF
-            MSY-JP60VF
-            MSY-GR25VF
-            MSY-GR35VF
-            MSY-GR50VF
-            MSY-GR60VF
-            MSY-GR71VF
-            MSZ-HL25VA
-            MSZ-HL35VA
-            MSZ-HL50VA
-            MS-HP35VF
-            MS-HP60VF
-            CU/CS-VU9UKH-8
-            CU/CS-VU12UKH-8
-            CU/CS-VU18UKH-8
-            CU/CS-XU9XKH-8
-            CU/CS-XU12XKH-8
-            CU/CS-XU18XKH-8
-            CU/CS-XU24XKH-8
-            CU/CS-U9XKH-8
-            CU/CS-U12XKH-8
-            CU/CS-U18XKH-8
-            CU/CS-U24XKH-8
-            CU/CS-WPU9XKH-8
-            CU/CS-WPU12XKH-8
-            CU/CS-WPU18XKH-8
-            CU/CS-WPU24XKH-8
-            CU/CS-XPU9XKH-8
-            CU/CS-XPU12XKH-8
-            CU/CS-XPU18XKH-8
-            CU/CS-XPU18XKH-8B
-            CU/CS-XPU24XKH-8
-            CU/CS-XPU24WKH-8
-            CU/CS-N9WKH-8
-            CU/CS-N12WKH-8
-            CU/CS-N18XKH-8
-            CU/CS-N24XKH-8
-            CU/CS-N18VKH-8
-            CU/CS-N24VKH-8
-            CU/CS-Z9VKH-8
-            CU/CS-Z12VKH-8
-            CU/CS-Z18VKH-8
-            CU/CS-Z24VKH-8
-            CU/CS-XZ9XKH-8
-            CU/CS-XZ12XKH-8
-            CU/CS-XZ18XKH-8
-            CU/CS-XZ24XKH-8
-            CU/CS-YZ9WKH-8
-            CU/CS-YZ12WKH-8
-            CU/CS-YZ18XKH-8
-            CU/CS-YZ18UKH-8
-            CZ-TACG1
-            FTV25BXV1V9
-            FTV35BXV1V9
-            FTF25UV1V
-            FTF35UV1V
-            FTC50NV1V
-            FTC60NV1V
-            FTKA25VAVMV
-            FTKA35VAVMV
-            FTKA50VAVMV
-            FTKA60VAVMV
-            FTKC25UAVMV
-            FTKC35UAVMV
-            FTKC50UVMV
-            FTKC60UVMV
-            FTKC71UVMV
-            FTKZ25VVMV
-            FTKZ35VVMV
-            FTKZ50VVMV
-            FTKZ60VVMV
-            FTKZ71VVMV
-            FTXV25QVMV
-            FTXV35QVMV
-            FTXV50QVMV
-            FTXV60QVMV
-            FTXV71QVMV
-            FTHF25VAVMV
-            FTHF35VAVMV
-            FTHF50VVMV
-            FTHF60VVMV
-            FTHF71VVMV
-            FTKY25WAVMV
-            FTKY35WAVMV
-            FTKY50WVMV
-            FTKY60WVMV
-            FTKY71WVMV
-            FTKB25WAVMV
-            FTKB35WAVMV
-            FTKB50WAVMV
-            FTKB60WAVMV
-            V18ENF1
-            V24ENF1
-            V10ENW1
-            V13ENS1
-            B10END1
-            B13END1
-            B18END/END1
-            B24END/END1
-            V10APFUV
-            V13APFUV
-            V10APF
-            V13APF
-            V10APIUV
-            V13APIUV
-            V10API1
-            V13API1
-            V18API1
-            V24API1
-            B10API
-            B13API
-            AR09TYHQASINSV
-            AR12TYHQASINSV
-            AR18TYHYCWKNSV
-            AR24TYHYCWKNSV
-            AR10TYGCDWKNSV
-            AR13TYGCDWKNSV
-            NS-C09R1M05
-            NS-C12R1M05
-            NS-C18R1M05
-            NS-C24R1M05
-            NS-A09R1M05
-            NS-A12R1M05
-            NS-A18R1M05
-            NS-A24R1M05
-            NIS-C09R2H08
-            NIS-C12R2H08
-            NIS-C18R2H08
-            HSC09TMU
-            HSC12TMU
-            HSC18TMU
-            HSC24TMU
-            HSC09TMU.H8
-            HSC12TMU.H8
-            HSC18TMU.H8
-            HSC24TMU.H8
-            HSH10TMU
-            HSH12TMU
-            HSH18TMU
-            HSH24TMU
-            HIC09TMU
-            HIC12TMU
-            HIC18TMU
-            HIC24TMU
-            HIH09TMU
-            HIH12TMU
-            HIH18TMU
-            HIH24TMU
-            AH-X9XEW
-            AH-X12XEW
-            AH-X18XEW
-            AH-X10ZW
-            AH-X13ZW
-            AH-X18ZW
-            AH-XP10YMW
-            AH-XP13YMW
-            AH-XP18YMW
-            AH-XP10YHW
-            AH-XP13YHW
-            OLED65GXPTA
-            OLED55GXPTA
-            OLED65CXPTA
-            55NANO91TNA
-            43UN721C0TF
-            55UN721C0TF
-            65UN721C0TF
-            43UP751C0TC
-            OLED88Z1PTA
-            OLED65G1PTA
-            OLED55G1PTA
-            OLED77C1PTB
-            OLED65C1PTB
-            OLED55C1PTB
-            OLED48C1PTB
-            OLED65A1PTA
-            OLED55A1PTA
-            OLED48A1PTA
-            75QNED99TPB
-            86QNED91PTA
-            75QNED91PTA
-            65QNED91PTA
-            75NANO95TPA
-            65NANO95TPA
-            75NANO86TPA
-            65NANO86TPA
-            55NANO86TPA
-            50NANO86TPA
-            65NANO77TPA
-            55NANO77TPA
-            50NANO77TPA
-            43NANO77TPA
-            65UP8100PTB
-            55UP8100PTB
-            50UP8100PTB
-            43UP8100PTB
-            86UP8000PTB
-            75UP7800PTB
-            70UP7800PTB
-            65UP7720PTC
-            55UP7720PTC
-            50UP7720PTC
-            43UP7720PTC
-            65UP7550PTC
-            55UP7550PTC
-            50UP7550PTC
-            43UP7550PTC
-            55UP7500PTC
-            50UP7500PTC
-            43UP7500PTC
-            43LM6360PTB
-            32LM636BPTB
-            43LM5750PTC
-            32LM575BPTC
-            32LQ576BPSA
-            QA65Q70TA
-            QA55Q70TA
-            QA65Q65TA
-            QA55Q65TA
-            QA50Q65TA
-            QA43Q65TA
-            UA65TU8500
-            UA55TU8500
-            UA50TU8500
-            UA43TU8500
-            UA75TU8100
-            UA65TU8100
-            UA55TU8100
-            UA50TU8100
-            UA43TU8100
-            UA75TU7000
-            UA65TU7000
-            UA55TU7000
-            UA50TU7000
-            UA43TU7000
-            49RU8000
-            43X8500H (B/S)
-            43X8050H
-            49X9500H
-            49X8050H
-            49X8500H (B/S)
-            55X8050H
-            55A8H
-            65X7500H
-            65X8050H
-            85X9000H (B/S)
-            KD-43X75
-            KD-43X80J/S
-            KD-43X86J
-            KD-50X75
-            KD-50X80J (B/S)
-            50X86J
-            50X90J
-            55A80J
-            55A90J
-            55X80J (B/S)
-            55X86J
-            55X90J
-            65A80J
-            65A90J
-            65X80J (B/S)
-            65X86J
-            65X90J
-            65X95J
-            75X80J
-            75X86J
-            XR-75X90J
-            77A80J
-            KD-85X86J
-            XR-85X95J
-            XR-85Z9J
-            L32S5200
-            L32S6300
-            32S6500
-            40S6500
-            L43S5200
-            L43P618
-            L50P618
-            L55P618
-            L65P618
-            L75P618
-            55P725
-            43P615
-            50P615
-            55P615
-            50C725
-            55C725
-            65C725
-            43P737
-            50P737
-            55P737
-            65P737
-            50Q726
-            55Q726
-            65X10
-            75X915
-            32PHT6915
-            50PUT8215
-            55PUT8215
-            65PUT8215
-            NR-BA229PKVN
-            NR-BA229PAVN
-            NR-BA190PPVN
-            NR-BV280QSVN
-            NR-SV280BPKV
-            NR-BV320QSVN
-            NR-BV360QSVN
-            NR-BC360QKVN
-            NR-BV360GKVN
-            NR-BV320GKVN
-            NR-BV280GKVN
-            NR-BL381WKVN
-            NR-BC360WKVN
-            NR-BV360WSVN
-            NR-BV320WKVN
-            NR-BV320WSVN
-            NR-BV280WKVN
-            NR-BX471WGKV
-            NR-BX471GPKV
-            NR-BX471XGKV
-            NR-BX421WGKV
-            NR-BX421GPKV
-            NR-BX421XGKV
-            NR-TL381GPKV
-            NR-TL381BPKV
-            NR-TL381VGMV
-            NR-TL351GPKV
-            NR-TL351BPKV
-            NR-TL351VGMV
-            NR-TV341BPKV
-            NR-TV341VGMV
-            NR-TV301BPKV
-            NR-TV301VGMV
-            NR-TV261APSV
-            NR-TV261BPKV
-            NR-DZ601VGKV
-            NR-DZ601YGKV
-            NR-YW590YMMV
-            NR-CW530XMMV
-            NR-F603GT-X2
-            NR-F603GT-N2
-            NR-F503GT-X2
-            NR-F503GT-T2
-            SJ-FX600V-SL
-            SJ-FX630V-BE
-            SJ-FX630V-ST
-            SJ-FX631V-SL
-            SJ-FX640V-SL
-            SJ-FX680V-ST
-            SJ-FX680V-WH
-            SJ-FX688VG-BK
-            SJ-FX688VG-RD
-            SJ-FXP480VG-BK
-            SJ-FXP480VG-CH
-            SJ-FXP480V-SL
-            SJ-FXP600VG-BK
-            SJ-FXP600VG-MR
-            SJ-FXP640VG-BK
-            SJ-FXP640VG-MR
-            SJ-X176E-DSS
-            SJ-X176E-SL
-            SJ-X196E-DSS
-            SJ-X196E-SL
-            SJ-X201E-SL
-            SJ-X201E-DS
-            SJ-X251E-SL
-            SJ-X251E-DS
-            SJ-X281E-SL
-            SJ-X281E-DS
-            SJ-X316E-SL
-            SJ-X316E-DS
-            SJ-X346E-SL
-            SJ-X346E-DS
-            SJ-FX420V-SL
-            SJ-FX420VG-BK
-            MR-FC25EP-OB-V
-            MR-FC25EP-BR-V
-            MR-FC25EP-SSL-V
-            MR-FC29EP-OB-V
-            MR-FC29EP-BR-V
-            MR-FC29EP-SSL-V
-            MR-FX43EN-GSL-V
-            MR-FX43EN-GBK-V
-            MR-FX47EN-GSL-V
-            MR-FX47EN-GBK-V
-            MR-CX41EJ-BRW-V
-            MR-CX41EJ-PS-V
-            MR-CX46EJ-BRW-V
-            MR-CX46EJ-PS-V
-            MR-CX35EM-BRW-V 
-            MR-CGX41EN-GBK-V 
-            MR-CGX41EN-GBR-V 
-            MR-CGX46EN-GBK-V 
-            MR-CGX46EN-GBR-V 
-            MR-CGX56EN-GBK-V 
-            MR-CGX56EN-GBR-V 
-            MR-L72EN-GSL-V
-            MR-L72EN-GBK-V
-            MR-L78EN-GSL-V
-            MR-L78EN-GBK-V
-            MR-LX68EM-GBK-V
-            MR-LX68EM-GSL-V
-            MR-WX52D-F-V
-            MR-WX52D-BR-V
-            H230PGV7(BSL)
-            H230PGV7(BBK)
-            R-FG510PGV8(GBK)
-            R-FG510PGV8(GBW)
-            FVX480PGV9(MIR)
-            FVX480PGV9(GBK)
-            R-FW690PGV7X(GBK)
-            R-FW690PGV7X(GBW)
-            R-H310PGV7(BSL)
-            R-H310PGV7(BBK)
-            R-SG38PGV9X(GBK)
-            R-SG38PGV9X(GBW)
-            R-WB640PGV1(GCK)
-            R-WB640VGV0(GBK)
-            R-WB640VGV0(GMG)
-            H350PGV7(BBK/BSL)
-            B330PGV8
-            F560PGV7
-            FG450PV8
-            FG560PGV7
-            FG630PGV7
-            FG690PGV7X
-            VG400PGV3
-            FG480PGV8
-            B505PGV6
-            B410PGV6(GBK)
-            BG410PGV6
-            BG410PGV6X
-            SG32FPGV
-            WB475PGV2(GBK/GBW)
-            WB545PGV2 (GBK/GBW)
-            FW690PGV7
-            WB730PGV6X
-             WB800PGV5 
-            R-FVY480PGV0(GBK)
-            R-FVY480PGV0(GBW)
-            R-FVX510PGV9(GBK)
-            R-M800FGV0
-            R-MX800GVGV0
-            FR-125CI
-            FR-132CI
-            FR-152CI
-            FR-135CD
-            FR-51CD
-            FR-71CD
-            FR-91CD
-            FR-126ISU
-            FR-136ISU
-            FR-156ISU
-            FR-166ISU
-            FR-186ISU
-            FR-216ISU
-            FRI-166ISU
-            FRI-186ISU
-            FRI-216ISU
-            ETB3440K-A
-            ETB3440K-H
-            EBB2802K-H";
-
-        $model = explode(PHP_EOL, $code);
-
-        foreach ($model as $value) {
 
 
-            $active = product::select('id')->where('ProductSku',trim($value))->first();
-            if(!empty($active)){
-                $id_active = product::find($active->id);
-                $id_active->Quantily =1;
-                $id_active->active =1;
-                $id_active->save();
-            }
-            else{
-                print_r($value.'       ');
 
-            }
-
-        }
-        echo "thanh cong";
-
-    }
-
+   
     public function checkbtu()
     {
         $name = "Điều hòa Mitsubishi MSZ-HL25VA 2 chiều 9000BTU Inverter Gas R410A";
@@ -2186,11 +1346,154 @@ class crawlController extends Controller
 
     public function getContentDienmayxanh()
     {
-        $html = file_get_html('https://www.dienmayxanh.com/tivi/smart-tivi-kieu-chu-i-co-chan-the-serif-qled-samsung-4k-55-inch-qa55ls01ba');
-        
-        $content  = html_entity_decode($html->find('.article ',0));
 
-        dd($content);
+        $link = 'https://www.dienmayxanh.com/tivi/smart-man-hinh-xoay-the-sero-qled-samsung-4k-43-inch-qa43ls05b
+        https://www.dienmayxanh.com/tivi/smart-kieu-chu-i-co-chan-the-serif-qled-samsung-4k-50-inch-qa50ls01ba
+        https://www.dienmayxanh.com/tivi/smart-tivi-kieu-chu-i-co-chan-the-serif-qled-samsung-4k-55-inch-qa55ls01ba
+        https://www.dienmayxanh.com/tivi/smart-kieu-chu-i-co-chan-the-serif-qled-samsung-4k-65-inch-qa65ls01b
+        https://www.dienmayxanh.com/tivi/smart-tivi-khung-tranh-the-frame-qled-samsung-full-hd-32-inch-qa32ls03b
+        https://www.dienmayxanh.com/tivi/smart-khung-tranh-the-frame-qled-samsung-4k-50-inch-qa50ls03b
+        https://www.dienmayxanh.com/tivi/smart-khung-tranh-the-frame-qled-samsung-4k-55-inch-qa55ls03b
+        https://www.dienmayxanh.com/tivi/smart-khung-tranh-the-frame-qled-samsung-4k-65-inch-qa65ls03b
+        https://www.dienmayxanh.com/tivi/smart-khung-tranh-the-frame-qled-samsung-4k-75-inch-qa75ls03b
+        https://www.dienmayxanh.com/tivi/smart-tivi-oled-samsung-4k-55-inch-qa55s95b
+        https://www.dienmayxanh.com/tivi/smart-tivi-oled-samsung-4k-65-inch-qa65s95b
+        https://www.dienmayxanh.com/tivi/smart-tivi-qled-4k-50-inch-samsung-qa50q80c
+        https://www.dienmayxanh.com/tivi/smart-tivi-qled-4k-55-inch-samsung-qa55q80c
+        https://www.dienmayxanh.com/tivi/smart-tivi-qled-4k-65-inch-samsung-qa65q80c
+        https://www.dienmayxanh.com/tivi/smart-tivi-qled-4k-75-inch-samsung-qa75q80c
+        https://www.dienmayxanh.com/tivi/smart-tivi-qled-4k-85-inch-samsung-qa85q80c
+        https://www.dienmayxanh.com/tivi/smart-tivi-oled-samsung-4k-55-inch-qa55s95ca
+        https://www.dienmayxanh.com/tivi/smart-tivi-oled-samsung-4k-65-inch-qa65s90ca
+        https://www.dienmayxanh.com/tivi/smart-tivi-oled-samsung-4k-65-inch-qa65s95ca
+        https://www.dienmayxanh.com/tivi/smart-tivi-oled-samsung-4k-77-inch-qa77s95ca
+        https://www.dienmayxanh.com/tu-lanh/tu-lanh-lg-inverter-655-lit-gr-q257mc
+        https://www.dienmayxanh.com/tu-lanh/tu-lanh-lg-gr-b53mb
+        https://www.dienmayxanh.com/tu-lanh/tu-lanh-lg-inverter-530-lit-gr-b53ps
+        https://www.dienmayxanh.com/tu-lanh/samsung-inverter-307-lit-rb30n4190by-sv
+        https://www.dienmayxanh.com/tu-lanh/tu-lanh-hitachi-390-lit-r-fvy510pgv0-gmg
+        https://www.dienmayxanh.com/tu-lanh/hitachi-inverter-509-lit-r-fw650pgv8
+        https://www.dienmayxanh.com/tu-lanh/hitachi-inverter-569-lit-r-wb640pgv1
+        https://www.dienmayxanh.com/tu-lanh/hitachi-inverter-573-lit-r-sx800gpgv0
+        https://www.dienmayxanh.com/tu-lanh/tu-lanh-hitachi-r-zx740kv-x
+        https://www.dienmayxanh.com/tu-lanh/hitachi-r-fw690pgv7-gbw
+        https://www.dienmayxanh.com/tu-lanh/tu-lanh-hitachi-inverter-540-lit-r-hw540rv-x
+        https://www.dienmayxanh.com/may-giat/tu-cham-soc-quan-ao-thong-minh-lg-s5goc
+        https://www.dienmayxanh.com/may-giat/tu-cham-soc-quan-ao-thong-minh-lg-s5boc
+        https://www.dienmayxanh.com/may-giat/may-giat-say-lg-inverter-14-kg-wt1410nhb
+        https://www.dienmayxanh.com/may-giat/may-giat-say-lg-inverter-21-kg-f2721hvrb
+        https://www.dienmayxanh.com/may-giat/may-giat-lg-fv1414s3ba
+        https://www.dienmayxanh.com/may-giat/may-giat-lg-inverter-14-kg-fv1414s3p
+        https://www.dienmayxanh.com/may-giat/may-giat-lg-fv1413s4w
+        https://www.dienmayxanh.com/may-giat/may-giat-lg-fv1412s3ba
+        https://www.dienmayxanh.com/may-giat/may-giat-lg-fv1412s3pa
+        https://www.dienmayxanh.com/may-giat/may-giat-lg-fv1411s4wa
+        https://www.dienmayxanh.com/may-giat/samsung-inverter-23-kg-wa23a8377gv-sv
+        https://www.dienmayxanh.com/may-giat/samsung-wa22r8870gv-sv
+        https://www.dienmayxanh.com/may-giat/samsung-wa12t5360by-sv
+        https://www.dienmayxanh.com/may-giat/may-giat-samsung-14kg-wa14cg5886bvsv
+        https://www.dienmayxanh.com/may-giat/may-giat-samsung-14kg-wa14cg5745bvsv
+        https://www.dienmayxanh.com/may-giat/may-giat-samsung-12kg-wa12cg5886bvsv
+        https://www.dienmayxanh.com/may-giat/may-giat-samsung-12kg-wa12cg5745bvsv
+        https://www.dienmayxanh.com/ban-ui/hoi-nuoc-panasonic-ni-s630vra
+        https://www.dienmayxanh.com/ban-ui/hoi-nuoc-panasonic-ni-s530ara
+        https://www.dienmayxanh.com/ban-ui/hoi-nuoc-panasonic-ni-s430gra
+        https://www.dienmayxanh.com/lo-vi-song/lo-vi-song-panasonic-nn-gt35nbyue-24-lit
+        https://www.dienmayxanh.com/lo-vi-song/lo-vi-song-panasonic-nn-st34nbyue-25-lit
+        https://www.dienmayxanh.com/may-hut-bui/may-hut-bui-dang-hop-panasonic-mc-cl609hn49
+        https://www.dienmayxanh.com/may-hut-bui/may-hut-bui-dang-hop-panasonic-mc-cl607rn49
+        https://www.dienmayxanh.com/noi-com-dien/noi-com-nap-roi-panasonic-72-lit-sr-ga721wra
+        https://www.dienmayxanh.com/may-say-toc/panasonic-eh-na98rp645
+        https://www.dienmayxanh.com/may-say-toc/panasonic-eh-na98-k645
+        https://www.dienmayxanh.com/may-say-toc/may-say-toc-1800w-panasonic-eh-ne27-k645
+        https://www.dienmayxanh.com/may-say-toc/panasonic-eh-nd57-h645
+        https://www.dienmayxanh.com/may-say-toc/panasonic-eh-nd57-h645
+        https://www.dienmayxanh.com/may-say-toc/1800w-panasonic-eh-nd37-k645
+        https://www.dienmayxanh.com/may-say-toc/may-say-toc-1800w-panasonic-eh-nd37-p645
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-205vn-s-20-lit#2-gia
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-g272vn-s-20-lit
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-g302vn-s#2-gia
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-g371vn-w#2-gia
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-c825vn-st
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-c932vn-st
+        https://www.dienmayxanh.com/lo-vi-song/lo-vi-song-sharp-r-g728xvn-bst
+        https://www.dienmayxanh.com/lo-vi-song/lo-vi-song-sharp-r-c932xvn-bst
+        https://www.dienmayxanh.com/lo-vi-song/r-32a2vn-s-23-lit
+        https://www.dienmayxanh.com/lo-vi-song/r-370vn-s-23-lit
+        https://www.dienmayxanh.com/lo-vi-song/sharp-r-289vn-w
+        https://www.dienmayxanh.com/noi-com-dien/sharp-18-lit-ks-ih191v-bk
+        https://www.dienmayxanh.com/noi-com-dien/sharp-18-lit-ks-ih191v-gl
+        https://www.dienmayxanh.com/noi-com-dien/sharp-ks-ih191v-rd-18-lit
+        https://www.dienmayxanh.com/noi-com-dien/sharp-ks-com08v-sl-072-lit
+        https://www.dienmayxanh.com/noi-com-dien/noi-com-dien-tu-sharp-11-lit-ks-com110dv-wh
+        https://www.dienmayxanh.com/noi-com-dien/sharp-ksh-218snv-sf-18-lit
+        https://www.dienmayxanh.com/noi-com-dien/sharp-ksh-228snv-sf-22-lit
+        https://www.dienmayxanh.com/noi-com-dien/sharp-18l-kn-tc50vn-sl-bac
+        https://www.dienmayxanh.com/noi-com-dien/sharp-18l-kn-tc50vn-wh
+        https://www.dienmayxanh.com/noi-com-dien/sharp-5-lit-ksh-d55v
+        https://www.dienmayxanh.com/noi-com-dien/sharp-7-lit-ksh-d77v
+        https://www.dienmayxanh.com/noi-com-dien/sharp-10-lit-ksh-d1010v
+        https://www.dienmayxanh.com/noi-com-dien/sharp-ks-n191etv
+        https://www.dienmayxanh.com/noi-com-dien/dien-tu-sharp-ks-com18v
+        https://www.dienmayxanh.com/binh-thuy-dien/binh-thuy-dien-sharp-kp-30stv
+        https://www.dienmayxanh.com/binh-thuy-dien/dien-sharp-kp-20btv
+        https://www.dienmayxanh.com/binh-thuy-dien/sharp-kp-31btv-cu
+        https://www.dienmayxanh.com/binh-thuy-dien/sharp-kp-y32pv-cu
+        https://www.dienmayxanh.com/binh-thuy-dien/sharp-kp-y40pv-cu
+        https://www.dienmayxanh.com/binh-thuy-dien/binh-thuy-dien-sharp-kp-40ebv-bk-4-lit
+        https://www.dienmayxanh.com/binh-thuy-dien/binh-thuy-dien-sharp-kp-40ebv-wh-4-lit
+        https://www.dienmayxanh.com/binh-thuy-dien/binh-thuy-dien-sharp-kp-40ebv-st-4-lit
+        https://www.dienmayxanh.com/noi-chien-khong-dau/sharp-kf-af70ev-st
+        https://www.dienmayxanh.com/may-xay-sinh-to/sharp-em-s154pv-wh
+        https://www.dienmayxanh.com/may-xay-sinh-to/sharp-em-s155pv-wh
+        https://www.dienmayxanh.com/binh-dun-sieu-toc/sharp-ekj-10dvps-rd
+        https://www.dienmayxanh.com/binh-dun-sieu-toc/binh-dun-sieu-toc-sharp-ekj-17evps-bk
+        https://www.dienmayxanh.com/binh-dun-sieu-toc/binh-dun-sieu-toc-sharp-ekj-17evsd-wd
+        https://www.dienmayxanh.com/binh-dun-sieu-toc/binh-dun-sieu-toc-sharp-ekj-15evs-st
+        https://www.dienmayxanh.com/lo-nuong/sharp-eo-a323rcsv-st
+        https://www.dienmayxanh.com/lo-nuong/sharp-eo-a384rcsv-st
+        https://www.dienmayxanh.com/lo-nuong/lo-nuong-sharp-eo-b46rcsv-bk
+        https://www.dienmayxanh.com/may-vat-cam/may-vat-cam-sharp-ej-j256-wh
+        https://www.dienmayxanh.com/may-vat-cam/may-vat-cam-sharp-ej-j415-wh
+        https://www.dienmayxanh.com/may-vat-cam/may-vat-cam-sharp-ej-j407-bk
+        https://www.dienmayxanh.com/may-vat-cam/may-vat-cam-sharp-ej-j407-wh
+        https://www.dienmayxanh.com/may-vat-cam/may-vat-cam-sharp-ej-j130-st
+        https://www.dienmayxanh.com/quat/dung-sharp-pj-s40rv-lg
+        https://www.dienmayxanh.com/may-loc-khong-khi/may-loc-khong-khi-sharp-fp-j80ev-h
+        https://www.dienmayxanh.com/may-loc-khong-khi/may-loc-khong-khi-sharp-fp-jm40v-b
+        https://www.dienmayxanh.com/may-loc-khong-khi/sharp-fp-gm50e-b
+        https://www.dienmayxanh.com/may-hut-am/may-hut-am-sharp-dw-d12a-w
+        https://www.dienmayxanh.com/may-hut-am/may-hut-am-sharp-dw-d12a-w
+        https://www.dienmayxanh.com/may-hut-am/may-hut-am-sharp-dw-d20a-w
+        https://www.dienmayxanh.com/may-say-quan-ao/may-say-thong-hoi-whirlpool-15-kg-3lwed4815fw
+        https://www.dienmayxanh.com/may-say-quan-ao/may-say-ngung-tu-whirlpool-8-kg-fftcm118xb-ee
+        https://www.dienmayxanh.com/may-say-quan-ao/may-say-thong-hoi-whirlpool-7-kg-awd712s2
+        https://www.dienmayxanh.com/may-rua-chen/whirlpool-wfe-2b19
+        https://www.dienmayxanh.com/may-rua-chen/whirlpool-wfc-3c26p
+        https://www.dienmayxanh.com/may-rua-chen/whirlpool-wio-3t133p';
+
+        $codess = explode(PHP_EOL, $link);
+
+        foreach ($codess as $key => $value) {
+            
+            $html = file_get_html('https://www.dienmayxanh.com/noi-chien-khong-dau/locknlock-ejf357wht');
+        
+            $content  = html_entity_decode($html->find('.article ',0));
+
+            $tskt  = html_entity_decode($html->find('.parameter',0));
+
+
+            $input = [];
+
+            $input['Specifications'] = $tskt;
+
+            $input['Detail'] = $content;
+
+            DB::table('product1')->insert($input);
+
+        }
+
+        echo "thành công";
     }
 
 
@@ -2204,114 +1507,114 @@ class crawlController extends Controller
         if(isset($dif)){
             foreach ($dif as $url) {
                 
-                    $html = file_get_html(trim($url));
-                    $title = strip_tags($html->find('.emty-title h1', 0));
-                    
-                    $specialDetail = html_entity_decode($html->find('.special-detail', 0));
-                    $content  = html_entity_decode($html->find('.emty-content .Description',0));
+                $html = file_get_html(trim($url));
+                $title = strip_tags($html->find('.emty-title h1', 0));
+                
+                $specialDetail = html_entity_decode($html->find('.special-detail', 0));
+                $content  = html_entity_decode($html->find('.emty-content .Description',0));
 
-                   
+               
 
-                    preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i', $content, $matches);
+                preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i', $content, $matches);
 
-                    $arr_change = [];
+                $arr_change = [];
 
-                    $time = time();
+                $time = time();
 
-                    $regexp = '/^[a-zA-Z0-9][a-zA-Z0-9\-\_]+[a-zA-Z0-9]$/';
+                $regexp = '/^[a-zA-Z0-9][a-zA-Z0-9\-\_]+[a-zA-Z0-9]$/';
 
-                    if(isset($matches[1])){
-                        foreach($matches[1] as $value){
-                           
-                            $value = 'http://dienmaynguoiviet.com/'.str_replace('..', '', $value);
+                if(isset($matches[1])){
+                    foreach($matches[1] as $value){
+                       
+                        $value = 'http://dienmaynguoiviet.com/'.str_replace('..', '', $value);
 
-                            $arr_image = explode('/', $value);
+                        $arr_image = explode('/', $value);
 
-                            if($arr_image[0] != env('APP_URL')){
+                        if($arr_image[0] != env('APP_URL')){
 
-                                $file_headers = @get_headers($value);
+                            $file_headers = @get_headers($value);
 
 
-                                if($file_headers[0] == 'HTTP/1.1 200 OK') 
-                                {
+                            if($file_headers[0] == 'HTTP/1.1 200 OK') 
+                            {
 
-                                    $infoFile = pathinfo($value, PATHINFO_EXTENSION);
+                                $infoFile = pathinfo($value, PATHINFO_EXTENSION);
 
-                                   if(!empty($infoFile)){
+                               if(!empty($infoFile)){
 
-                                        if($infoFile=='png'||$infoFile=='jpg'||$infoFile=='web'){
+                                    if($infoFile=='png'||$infoFile=='jpg'||$infoFile=='web'){
 
-                                            $img = '/images/product/crawl/'.basename($value);
+                                        $img = '/images/product/crawl/'.basename($value);
 
-                                            file_put_contents(public_path().$img, file_get_contents($value));
+                                        file_put_contents(public_path().$img, file_get_contents($value));
 
-                                         
-                                            array_push($arr_change, 'images/product/crawl/'.basename($value));
-                                        }   
-                                    }
-
-                                    
+                                     
+                                        array_push($arr_change, 'images/product/crawl/'.basename($value));
+                                    }   
                                 }
-                               
+
+                                
                             }
-                            
+                           
                         }
+                        
                     }
+                }
 
 
 
-                    $content = str_replace($matches[1], $arr_change, $content);
+                $content = str_replace($matches[1], $arr_change, $content);
 
-                    $price = strip_tags($html->find(".p-price", 0));
+                $price = strip_tags($html->find(".p-price", 0));
 
-                    $info  = html_entity_decode($html->find('.emty-info table', 0));
-                    // $arElements = $html->find( "meta[name=keywords]" );
-                    $price = trim(str_replace('Liên hệ', '0', $price));
-                    $price =  trim(str_replace(["Giá:","VNĐ",".", "Giá khuyến mại:"],"",$price));
-                    $images =  html_entity_decode($html->find('#owl1 img',0));
-                    
-                    if(!empty($images) ){
-                        $image = $html->find('#owl1 img',0)->src;
-                        if(!empty($image)){
+                $info  = html_entity_decode($html->find('.emty-info table', 0));
+                // $arElements = $html->find( "meta[name=keywords]" );
+                $price = trim(str_replace('Liên hệ', '0', $price));
+                $price =  trim(str_replace(["Giá:","VNĐ",".", "Giá khuyến mại:"],"",$price));
+                $images =  html_entity_decode($html->find('#owl1 img',0));
+                
+                if(!empty($images) ){
+                    $image = $html->find('#owl1 img',0)->src;
+                    if(!empty($image)){
 
-                            $urlImage = 'http://dienmaynguoiviet.com/'.$image;
+                        $urlImage = 'http://dienmaynguoiviet.com/'.$image;
 
-                            $contents = file_get_contents($urlImage);
-                            $name = basename($urlImage);
-                            
-                            $name = '/uploads/product/crawl/'.time().'_'.$name;
+                        $contents = file_get_contents($urlImage);
+                        $name = basename($urlImage);
+                        
+                        $name = '/uploads/product/crawl/'.time().'_'.$name;
 
-                            Storage::disk('public')->put($name, $contents);
+                        Storage::disk('public')->put($name, $contents);
 
-                            $image = $name;
+                        $image = $name;
 
-                        }
-                        else{
-                            $image = '/images/product/noimage.png';
-                        }
-
-                        $model = strip_tags($html->find('#model', 0));
-
-                        $qualtily = -1;
-
-                        $maker = 12;
-
-                        $meta_id = 0;
-
-                        $group_id = 2;
-
-                        $active = 0;
-
-                        $link =  str_replace('/', '', trim(str_replace('http://dienmaynguoiviet.com/', '', $url)));
-
-                        $inputs = ["Link"=>$link, "Price"=>$price, "Name"=>$title, "ProductSku"=>$model, "Image"=>$image, "Quantily"=>$qualtily, "Maker"=>$maker, "Meta_id"=>$meta_id,"Group_id"=>$group_id, "active"=>0, "Specifications"=>$info, "Salient_Features"=>$specialDetail, "Detail"=>$content];
-
-                        product::Create($inputs);
-                        DB::table('product_crawl')->insert(['link'=>$url]);
                     }
                     else{
-                        print_r($url);
-                    } 
+                        $image = '/images/product/noimage.png';
+                    }
+
+                    $model = strip_tags($html->find('#model', 0));
+
+                    $qualtily = -1;
+
+                    $maker = 12;
+
+                    $meta_id = 0;
+
+                    $group_id = 2;
+
+                    $active = 0;
+
+                    $link =  str_replace('/', '', trim(str_replace('http://dienmaynguoiviet.com/', '', $url)));
+
+                    $inputs = ["Link"=>$link, "Price"=>$price, "Name"=>$title, "ProductSku"=>$model, "Image"=>$image, "Quantily"=>$qualtily, "Maker"=>$maker, "Meta_id"=>$meta_id,"Group_id"=>$group_id, "active"=>0, "Specifications"=>$info, "Salient_Features"=>$specialDetail, "Detail"=>$content];
+
+                    product::Create($inputs);
+                    DB::table('product_crawl')->insert(['link'=>$url]);
+                }
+                else{
+                    print_r($url);
+                } 
                
                
             }    
@@ -2879,8 +2182,6 @@ http://dienmaynguoiviet.com/dieu-hoa-Funiki-SH09MMC-2-chieu-9000BTU/";
                 }
             }
 
-
-           
         }    
      
 
