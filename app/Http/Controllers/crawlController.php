@@ -1474,26 +1474,229 @@ class crawlController extends Controller
 
         $codess = explode(PHP_EOL, $link);
 
-        foreach ($codess as $key => $value) {
+        foreach ($codess as $key => $val) {
+
+            $file_headers = @get_headers(trim($val));
+
+            if($file_headers[0] == 'HTTP/1.1 200 OK') 
+            {
             
-            $html = file_get_html('https://www.dienmayxanh.com/noi-chien-khong-dau/locknlock-ejf357wht');
-        
-            $content  = html_entity_decode($html->find('.article ',0));
-
-            $tskt  = html_entity_decode($html->find('.parameter',0));
+                $html = file_get_html(trim($val));
 
 
-            $input = [];
+            
+                $content  = html_entity_decode($html->find('.article ',0));
 
-            $input['Specifications'] = $tskt;
+                $tskt  = html_entity_decode($html->find('.parameter',0));
 
-            $input['Detail'] = $content;
+                preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i',$content, $matches);
 
-            DB::table('product1')->insert($input);
+                foreach ($matches[1] as $key => $value) {
+
+                    $inputs = [];
+
+                    $inputs['link'] = $val;
+
+                    $inputs['image'] = $value;
+
+                    DB::table('imagecrawl')->insert($inputs);
+
+                    // $img = '/images/crawl_img/'.basename($value);
+
+                    // $file_headers = @get_headers(trim($value));
+
+                    // if($file_headers[0] == 'HTTP/1.1 200 OK'){
+
+                    //     //phần lưu ảnh vào folder ảnh
+
+                    //     file_put_contents(public_path().$img, file_get_contents($value));
+
+                    //     // viết lại ảnh đã lưu
+
+                    //     $content = str_replace($value, $img, $content);
+                    // }
+                    // else{
+
+                    //     echo $value;
+
+                    // }
+
+                   
+                }
+
+                $input = [];
+
+                $input['Specifications'] = $tskt;
+
+                $input['Detail'] = $content;
+
+                $input['Link'] = $val;
+
+                DB::table('product1')->insert($input);
+            }  
+
+            else{
+                echo $val;
+            }   
 
         }
 
         echo "thành công";
+    }
+
+    public function convertImgToContent()
+    {
+
+        $data           = DB::table('product1')->get();
+
+        $html           = file_get_html('https://www.dienmayxanh.com/may-rua-chen/whirlpool-wio-3t133p');
+
+        $content_img    = html_entity_decode($html->find('.article ',0));
+
+        preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i',$content_img, $matches);
+
+        foreach ($matches[1] as $key => $value) {
+
+            $img = 'images/crawl_img/'.basename($value);
+
+            //phần lưu ảnh vào folder ảnh
+
+            file_put_contents(public_path().$img, file_get_contents($value));
+
+            // viết lại ảnh đã lưu
+
+            $content = str_replace($value, $img, $details);
+        }
+    
+    }
+
+
+    public function getAvaProduct()
+    {
+        $ava = 'QA43LS05BA
+                QA50LS01BA
+                QA55LS01BA
+                QA65LS01BA
+                QA32LS03BB
+                QA50LS03BA
+                QA55LS03BA
+                QA65LS03BA
+                QA75LS03BA
+                QA55S95BA
+                QA65S95BA
+                QA50Q80C
+                QA55Q80C
+                QA65Q80C
+                QA75Q80C
+                QA85Q80C
+                QA55S95C
+                QA65S90C
+                QA65S95C
+                QA77S95C
+                GR-Q257MC
+                GR-B53MB
+                GR-B53PS
+                RB30N4190BY/SV
+                R-FVY510PGV0(GMG)
+                R-FW650PGV8(GBK)
+                R-WB640PGV1(GMG)
+                R-SX800GPGV0(GBK)
+                R-ZX740KV(X)
+                R-FW690PGV7(GBW)
+                R-HW540RV(X)
+                S5GOC
+                S5BOC
+                WT1410NHB
+                F2721HVRB
+                FV1414S3BA
+                FV1414S3P
+                FV1413S4W
+                FV1412S3BA
+                FV1412S3PA
+                FV1411S4WA
+                WA23A8377GV/SV
+                WA22R8870GV/SV
+                WA12T5360BY/SV
+                WA14CG5886BVSV
+                WA14CG5745BVSV
+                WA12CG5886BVSV
+                WA12CG5745BVSV
+                NI-S630VRA
+                NI-S530ARA
+                NI-S430GRA
+                NN-GT35NBYUE
+                NN-ST34NBYUE
+                MC-CL609HN49
+                MC-CL607RN49
+                SR-GA721WRA
+                EH-NA98RP645
+                EH-NA98-K645
+                EH-NE27-K645
+                EH-ND57-P645
+                EH-ND57-H645
+                EH-ND37-K645
+                EH-ND37-P645
+                R-205VN-S
+                R-G272VN-S
+                R-G302VN-S
+                R-G371VN-W
+                R-C825VN (ST)
+                R-C932VN (ST)
+                R-G728XVN-BST
+                R-C932XVN-BST
+                R-32A2VN-S
+                R-370VN-S
+                R-289VN(W)
+                KS-IH191V-BK
+                KS-IH191V-GL
+                KS-IH191V-RD
+                KS-COM08V-SL
+                KS-COM110DV-WH
+                KSH-218SNV-SF
+                KSH-228SNV-SF
+                KN-TC50VN-SL
+                KN-TC50VN-WH
+                KSH-D55V
+                KSH-D77V
+                KSH-D1010V
+                KS-N191ETV-CU
+                KS-COM18V
+                KP-30STV
+                KP-20BTV
+                KP-31BTV-CU
+                KP-Y32PV-CU
+                KP-Y40PV-CU
+                KP-40EBV-BK
+                KP-40EBV-WH
+                KP-40EBV-ST
+                KF-AF70EV-ST
+                EM-S154PV-WH
+                EM-S155PV-WH
+                EKJ-10DVPS-RD
+                EKJ-17EVPS-BK
+                EKJ-17EVSD-WD
+                EKJ-15EVS-ST
+                EO-A323RCSV-ST
+                EO-A384RCSV-ST
+                EO-B46RCSV-BK
+                EJ-J256-WH
+                EJ-J415-WH
+                EJ-J407-BK
+                EJ-J407-WH
+                EJ-J130-ST
+                PJ-S40RV-LG
+                FP-J80EV-H
+                FP-JM40V-B
+                FP-GM50E-B
+                DW-D12A-W
+                DW-D12A-W
+                DW-D20A-W
+                3LWED4815FW 
+                FFTCM118XBEE
+                AWD712S2
+                WFE2B19
+                WFC3C26P
+                WIO3T133P';
     }
 
 
@@ -2117,8 +2320,6 @@ http://dienmaynguoiviet.com/dieu-hoa-Funiki-SH09MMC-2-chieu-9000BTU/";
 
 
 
-
-   
 
      public function post()
      {
