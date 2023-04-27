@@ -1501,26 +1501,13 @@ class crawlController extends Controller
 
                     DB::table('imagecrawl')->insert($inputs);
 
-                    // $img = '/images/crawl_img/'.basename($value);
+                    $img = '/images/crawl_img/'.basename($value);
 
-                    // $file_headers = @get_headers(trim($value));
+                    $file_headers = @get_headers(trim($value));
 
-                    // if($file_headers[0] == 'HTTP/1.1 200 OK'){
+                    // viết lại ảnh đã lưu
 
-                    //     //phần lưu ảnh vào folder ảnh
-
-                    //     file_put_contents(public_path().$img, file_get_contents($value));
-
-                    //     // viết lại ảnh đã lưu
-
-                    //     $content = str_replace($value, $img, $content);
-                    // }
-                    // else{
-
-                    //     echo $value;
-
-                    // }
-
+                    $content = str_replace($value, $img, $content);
                    
                 }
 
@@ -1543,6 +1530,10 @@ class crawlController extends Controller
 
         echo "thành công";
     }
+
+
+
+    fun
 
     public function convertImgToContent()
     {

@@ -108,10 +108,6 @@ Route::get('cart/index', 'Frontend\indexController@Cart')->name('cart-tgtl');
 
 // Route::get('inCrawl', 'crawlController@allproduct');
 
-Route::get('/php', function () {
-    phpinfo();
-    
-});
 
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
