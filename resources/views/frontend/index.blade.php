@@ -29,9 +29,18 @@
  @endpush
 
 <ul class="ul bxslider bxhome fomart">
+
+    @if(isset($banners))
+
+    @foreach($banners as $value)
+
     <li>
-        <a href="https://thegioitulanh.vn/tu-lanh-hitachi" target='_blank' rel='nofollow'><img border=0 src="https://thegioitulanh.vn/wp-content/uploads/2021/04/Inkedbanner-2021_LI.jpg" alt="" /></a>
+        <a href="{{ $value->link }}" target='_blank' rel='nofollow'><img border=0 src="{{ asset($value->image) }}"  /></a>
     </li>
+
+    @endforeach
+    @endif
+    
    
    <!--  <li><a href="/ad.php?id=130" target='_blank' rel='nofollow'><img border=0 src="/media/banner/21_Novf118303817153f4a0617a49ca2c09acd.png" alt="mua tủ lạnh tại kho" /></a></li>
     <li><a href="/ad.php?id=129" target='_blank' rel='nofollow'><img border=0 src="/media/banner/19_Mar0c973e13f92b24359d33f29fa20e7f55.png" alt="máy giặt" /></a></li> -->
