@@ -129,9 +129,19 @@
          @stack('css')
     </head>
     <body class="module-home view-home">
-        <script src="{{  asset('js/jquery-1.10.2.js') }}"></script>
+        <!-- <script src="{{  asset('js/jquery-1.10.2.js') }}"></script> -->
 
-        <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+   <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>   
+
+ <script
+  src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"
+  integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA="
+  crossorigin="anonymous"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.24/jquery.autocomplete.min.js"></script> -->
         <div class="wrapper">
             <div class="header">
                 <meta name="google-site-verification" content="VZ6xUK4LvjzzKg4DnXDrU0eGXa37Bk4IGdXP8cUFcZ0" />
@@ -363,10 +373,9 @@
                         
                         source: function(request, response) {
                             $.ajaxSetup({
-                            headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            }
-
+                                headers: {
+                                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                }
 
                             });
                             $.ajax({
@@ -408,7 +417,41 @@
                     }
 
                 })
-            });    
+            }); 
+
+
+            $(function() {
+                $("#ip1").autocomplete({
+                    minLength: 2,
+                    source: function(request, response) {
+                        $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+
+
+                        });
+                        $.ajax({
+
+                            url: "{{  route('sugest-click')}}",
+                            type: "POST",
+                            data: {
+                                _token: "{{ csrf_token() }}",
+                                product:$('#ip1').val()
+                            },
+                            dataType: "json",
+                            success: function (data) {
+                               console.log(1)
+                            
+                            }
+                        });
+                    },
+                    html:true,
+                });
+            })
+
+
+          
         </script>
 
         <!-- Google Tag Manager -->
