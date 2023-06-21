@@ -19,7 +19,7 @@ class Alepay {
     protected $baseURL = array(
         'dev' => 'localhost:8080',
         'test' => 'https://alepay-v3-sandbox.nganluong.vn/api/v3/checkout/',
-        'live' => 'https://alepay-v3-sandbox.nganluong.vn/api/v3/checkout/'
+        'live' => 'https://alepay-v3.nganluong.vn/api/v3/checkout/'
     );
     protected $URI = array(
         'requestPayment' => 'request-payment',
@@ -223,15 +223,13 @@ class Alepay {
     public function sendOrderV3($data)
     {
         $data['tokenKey'] = $this->apiKey;
-
-        dd($data['tokenKey']);
         $data['customMerchantId'] = 'lam123';
          $data['returnUrl'] = $this->callbackUrl;
         $data['cancelUrl'] = $this->callbackUrl;
         $signature = $this->alepayUtils->makeSignature($data, $this->checksumKey);
         $data['signature'] = $signature;
         $data_string = json_encode($data);
-		$url =  'https://alepay-v3.nganluong.vn/api/v3/checkout/'. $this->URI['requestPayment'];
+		$url =  'https://alepay-v3-sandbox.nganluong.vn/api/v3/checkout/'. $this->URI['requestPayment'];
 
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
