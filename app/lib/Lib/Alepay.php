@@ -19,7 +19,7 @@ class Alepay {
     protected $baseURL = array(
         'dev' => 'localhost:8080',
         'test' => 'https://alepay-v3-sandbox.nganluong.vn/api/v3/checkout/',
-        'live' => 'https://alepay-v3.nganluong.vn/api/v3/checkout/'
+        'live' => 'https://alepay-v3-sandbox.nganluong.vn/api/v3/checkout/'
     );
     protected $URI = array(
         'requestPayment' => 'request-payment',
