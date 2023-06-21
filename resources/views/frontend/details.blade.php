@@ -209,6 +209,17 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
                     Gọi đặt mua:  <span class="txt_b txt_red"><a href="tel:0967025111"> 096.884.5875</a></span> (7:30-22:00)<br>
                    
                 </div>
+
+                @if((int)$data['Price']>=3000000)
+                                <div class="installment-purchase pdetail-installment">
+                                   
+                                    <a target="_blank"  href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop">
+                                    <strong>TRẢ GÓP QUA THẺ</strong>
+                                    <br>
+                                    (Visa, Master, JCB)
+                                    </a>
+                                </div>
+                                @endif
                 <div class="clear"></div>
             </div>
             <!--//prod-info-left -->
