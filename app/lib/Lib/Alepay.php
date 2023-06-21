@@ -223,6 +223,8 @@ class Alepay {
     public function sendOrderV3($data)
     {
         $data['tokenKey'] = $this->apiKey;
+
+        dd($data['tokenKey']);
         $data['customMerchantId'] = 'lam123';
          $data['returnUrl'] = $this->callbackUrl;
         $data['cancelUrl'] = $this->callbackUrl;
