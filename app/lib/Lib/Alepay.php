@@ -38,17 +38,17 @@ class Alepay {
          * Require curl and json extension
          */
         if (isset($opts) && !empty($opts["apiKey"])) {
-            $this->apiKey = 'yJVzaXsEfDKYvf6D4hineQMHEBI3EF';
+            $this->apiKey = 'RpMkK0JfiwhEWdfjA6TZi7qKRvoKrz';
         } else {
             throw new Exception("API key is required !");
         }
         if (isset($opts) && !empty($opts["encryptKey"])) {
-            $this->publicKey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFXmSiZ9q1X0CBN0ye7SNSv+Sz6gtH3lsd3SPaTwYcubQNgah/mwezNl/ABU5cPvUH6g3EQ9a13X++eRSfap4sFF2CehBQSZroZPHIGZEAYi401iOFLInqxV71zqRv1xrNQ4GnEldni+/rkgQaWYICsfy8pxkr+w7l6fZVrJ+aVwIDAQAB';
+            $this->publicKey = 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDejJkDxom33dul1nlfLP2ScA6V/i57+8Bqee8p9Gc4fYYJbvEAZQPjN4RRuszDvQrogx/jNEowq+JuHXE8nFXsd6MNdcV+A3f80xFsnmvcMvBIdiMDuYYoopL6f4XjRHGZZouN8mcMc9ZvVVWLS3x2Umyt84beNQDhIAhPD9LocQIDAQAB';
         } else {
             throw new Exception("Encrypt key is required !");
         }
         if (isset($opts) && !empty($opts["checksumKey"])) {
-            $this->checksumKey = 'HaG8ImT64DO8Iivg8qWokIwfqC542x';
+            $this->checksumKey = 'd7hEU8EAha7ReAtgnmpDbfjpbKgdvx';
         } else {
             throw new Exception("Checksum key is required !");
         }
