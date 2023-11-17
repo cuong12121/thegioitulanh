@@ -22,19 +22,19 @@ class BlockIpMiddleware
     public function getIpBlock()
     {
         
-        // $ipBlock = Cache::rememberForever('checkspam', function () {
+        $ipBlock = Cache::rememberForever('checkspam', function () {
 
-        //     $ipBlock = DB::table('checkspam')->select('ip')->get();
+            $ipBlock = DB::table('checkspam')->select('ip')->get();
 
-        //     return $ipBlock;
-        // });
+            return $ipBlock;
+        });
 
         $ip = [];
 
-        // foreach ($ipBlock as $key => $value) {
+        foreach ($ipBlock as $key => $value) {
 
-        //     array_push($ip, $value->ip);
-        // }
+            array_push($ip, $value->ip);
+        }
         return $ip;
 
 
