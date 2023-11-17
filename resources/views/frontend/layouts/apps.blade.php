@@ -83,6 +83,10 @@
                 display: none;
             }
 
+            .navigation {
+                background:#653496 !important;
+            }
+
 
 
             @media only screen and (max-width: 768px) {
