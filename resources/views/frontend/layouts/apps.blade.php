@@ -4,7 +4,7 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="google-site-verification" content="l5L7R0v5Clz_tEvf6c7FuMsH9D3RNKosfYTG12fY0sM" />
+        <meta name="google-site-verification" content="tHKgRsxISoBrR3AvNTPjMst848t2jVBPm8mClc4GpXE" />
 
        
         @if(!empty($data->Name))
