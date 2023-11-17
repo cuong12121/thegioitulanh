@@ -29,7 +29,7 @@ class BlockIpMiddleware
         //     return $ipBlock;
         // });
 
-        // $ip = [];
+        $ip = [];
 
         // foreach ($ipBlock as $key => $value) {
 
