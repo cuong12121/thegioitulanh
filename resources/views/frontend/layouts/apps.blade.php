@@ -59,7 +59,7 @@
         <!--style-->
         <link rel="shortcut icon" href="{{ asset('media/banner/cropped-logo.png')  }}">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="{{ asset('template/default/script/style.css') }}?ver=2" rel="stylesheet">
+        <link href="{{ asset('template/default/script/style.css') }}?ver=3" rel="stylesheet">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1HRZPN7JD"></script>
