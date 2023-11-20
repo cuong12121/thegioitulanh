@@ -10,10 +10,12 @@
             width: 100% !important;
         }
 
-        .btn-order{
+
+    }   
+
+    .btn-order{
             background: #a80000 !important;
         }
-    }   
 </style>
 <?php
     if($data->Quantily==0||$data['Price']==0){
