@@ -205,6 +205,8 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
                         <a class="btn-buy txt_center cor5px" onclick="addToCart({{ $data->id }})" href="javascript:;">
                         <i class="fa fa-shopping-cart"></i> <span class="txt_15">Thêm Vào Giỏ Hàng</span>
                         </a>
+
+                        <a class="btn-buy txt_center cor5px" onclick="addToCart({{ $data->id }})" href="javascript:;"> <i class="fa fa-shopping-cart"></i> <span class="txt_15">Mua hàng</span> </a>
                     </div>
                     Gọi đặt mua:  <span class="txt_b txt_red"><a href="tel:0967025111"> 096.884.5875</a></span> (7:30-22:00)<br>
                    
