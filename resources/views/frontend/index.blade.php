@@ -126,4 +126,21 @@
     </div>
     <!--//article-->
 </div>
+
+
+@if (session('success'))
+
+
+    <script type="text/javascript">
+
+        alert('{{ session("success") }}')
+       
+      
+    </script>
+    <?php
+    Session::forget('success');
+    ?>
+
+    
+@endif
 @endsection
