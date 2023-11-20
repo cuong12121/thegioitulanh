@@ -399,8 +399,8 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
                    
             },
             success: function(result){
-    
-                $('.number-cart').text(result);
+                
+                $('.count_shopping_cart_store').text(result);
                 alert('Thêm sản phẩm vào giỏ hàng thành công !');
 
             }
