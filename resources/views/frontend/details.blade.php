@@ -202,7 +202,7 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
                     <div class="clear">Số lượng:</div>
                     <div class="clear space10px in">
                         <input type="number" id="s_quantity" value="1">
-                        <a class="btn-buy txt_center cor5px" onclick="addToCart({{ $data->id }})" href="javascript:;">
+                        <a class="btn-buy txt_center cor5px" onclick="addCartFast({{ $data->id }})" href="javascript:;">
                         <i class="fa fa-shopping-cart"></i> <span class="txt_15">Thêm Vào Giỏ Hàng</span>
                         </a>
 
@@ -378,6 +378,31 @@ $thuonghieu = [1 => 5, 3 => 35, 2 =>56, 4 =>76, 6=>115, 7=>129];
             success: function(result){
     
                 window.location.href = "{{ route('cart-tgtl')  }}";
+            }
+        });
+        
+    }
+
+    function addCartFast(id) {
+    
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('addcartfast') }}",
+            data: {
+                product_id: id,
+                   
+            },
+            success: function(result){
+    
+                $('.number-cart').text(result);
+                alert('Thêm sản phẩm vào giỏ hàng thành công !');
+
             }
         });
         
