@@ -353,7 +353,7 @@ a.vmore-result:hover {color:#000;background-color:#ddd}
 .prod-info .buy-group{padding:10px 0;border-top:1px solid #eee;margin:10px 0;}
 .prod-info .buy-group .in {padding:10px 20px;padding-right: 0px;}
 .prod-info .buy-group .in input{width:50px;height:37px;text-align:center;border: 1px solid #ddd;margin:0;padding:0;}
-.prod-info .btn-buy{display: inline-block;height:35px;line-height:35px;padding:0 10px 0 10px;color: #fff;border-bottom:2px solid #a80000;background-color: #fc3f3f;background-image: -moz-linear-gradient(center top , #fc3f3f, #d91c1c);background-image: -webkit-linear-gradient(top,#fc3f3f,#d91c1c);}
+.prod-info .btn-buy{display: inline-block;height:35px;line-height:35px;padding:0 10px 0 10px;color: #fff;border-bottom:2px solid #a80000;background-color: #fc3f3f;background-image: -moz-linear-gradient(center top , #fc3f3f, #d91c1c);background-image: -webkit-linear-gradient(top,#fc3f3f,#7fd91c);}
 .prod-info .btn-buy span{padding-left:30px;border-left:1px solid #b81717;height:35px;display:inline-block;}
 .prod-info .btn-buy i{font-size:20px;margin-right:10px;}
 .prod-info .buy-group .in .buy-onepay {
