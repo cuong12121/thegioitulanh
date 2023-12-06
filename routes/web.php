@@ -28,6 +28,8 @@ Route::post('/check-unique-cate', 'productController@filterProduct')->name('chec
 
 Route::get('/random-deal', 'crawlController@randomOrderDeal');
 
+Route::get('/test-redis', 'crawlController@testRedis');
+
 
 Route::get('/test', 'Frontend\categoryController@test');
 
