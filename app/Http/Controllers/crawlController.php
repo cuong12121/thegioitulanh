@@ -1542,9 +1542,6 @@ class crawlController extends Controller
     }
 
 
-
-    fun
-
     public function convertImgToContent()
     {
 
