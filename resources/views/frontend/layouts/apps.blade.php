@@ -314,7 +314,7 @@
                     <div class="space10px"></div>
                     <div class="space5px"></div>
 
-                    <div class="container"> <p> <b>Địa chỉ: số 29 Ngõ 683 Nguyễn Khoái, Phường Thanh Trì, Quận Hoàng Mai, TP HN. </b> </p> </div>
+                    <div class="container" style="text-align: center;"> <p> <b>Địa chỉ: số 29 Ngõ 683 Nguyễn Khoái, Phường Thanh Trì, Quận Hoàng Mai, TP HN. </b> </p> </div>
                     
                 </div>
               
