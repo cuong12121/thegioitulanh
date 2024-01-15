@@ -293,6 +293,7 @@
                         <ul class="ft-group">
                             
                             <li><a href="#">Giới thiệu công ty</a></li>
+                            <li>Email: thegioitulanhmc@gmail.com</li>
                             <li><a href="#">Tuyển dụng</a></li>
                             <li><a href="#">Liên hệ góp ý</a></li>
                         </ul>
@@ -312,6 +313,8 @@
                     </div>
                     <div class="space10px"></div>
                     <div class="space5px"></div>
+
+                    <div class="container"> <p> <b>Địa chỉ: số 29 Ngõ 683 Nguyễn Khoái, Phường Thanh Trì, Quận Hoàng Mai, TP HN. </b> </p> </div>
                     
                 </div>
               
